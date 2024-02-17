@@ -11,7 +11,7 @@ export default function Home() {
     // page
     <div className="flex flex-col place-items-center justify-center min-w-screen place-self-center min-h-screen">
       {/* content holder */}
-      <div className="flex flex-col w-2/3 min-h-full bg-white p-4 gap-2">
+      <div className="flex flex-col w-full md:w-2/3 min-h-full bg-white p-4 gap-2">
         {/* content */}
         <FirstSetCombine />
         <ProjectSet />

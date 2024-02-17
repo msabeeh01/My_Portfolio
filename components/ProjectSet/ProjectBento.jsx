@@ -11,8 +11,10 @@ const ProjectBento = () =>{
         Aos.init()
     })
     return(
-        <div data-aos="fade-up" className="bg-[#D9D9D9] h-[260px] w-full rounded-lg p-2 hover:scale-105 transition-all duration-200">
+        <div data-aos="fade-up" className="m-0 p-0">
+        <div className="bg-[#D9D9D9] h-[260px] w-full rounded-lg p-2 hover:scale-105 transition-all duration-200">
             <Image src={project_placeholder} quality={100} className="rounded-lg object-cover h-full "/>
+        </div>
         </div>
     )
 }
