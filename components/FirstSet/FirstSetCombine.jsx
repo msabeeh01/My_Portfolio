@@ -9,7 +9,7 @@ const FirstSetCombine = () => {
 
             {/* about me and bento */}
             <div className="flex flex-col gap-4 grid-cols-subgrid grid-rows-subgrid row-span-2 col-span-2">
-                <div className="flex gap-1 flex-wrap md:flex-row md:gap-4 ">
+                <div className="gap-1 flex flex-wrap md:flex-row md:gap-4 justify-stretch">
                     <BentoCard skill={"React"} progress={100}/>
                     <BentoCard skill={"Next.js"} progress={100}/>
                     <BentoCard skill={"NodeJS"} progress={100}/>
