@@ -6,7 +6,7 @@ const ProjectSet = () =>{
     return(
         <div className="flex gap-4 flex-col">
         {/* title spaces */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center" data-aos="fade-up">
           <div className="text-6xl font-bold break-all">Projects</div>
           <div className="text-4xl">📝</div>
         </div>

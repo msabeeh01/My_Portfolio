@@ -1,14 +1,14 @@
 const AboutMe = () => {
 
     return (
-        <div className="flex w-full h-full flex-col">
+        <div className="flex w-full h-full flex-col" data-aos="fade-right">
             <p className="text-6xl font-bold break-all">
                 Muhammad&nbsp;
                 <span className="text-6xl font-normal break-all text-[#6E6E73]">
                     Sabeeh
                 </span>
             </p>
-            <div className="bg-white rounded-lg p-4 mt-4 h-full">
+            <div className="bg-white rounded-2xl p-4 mt-4 h-full">
                 <ul className="break-words h-full list-disc ml-4">
                     <li>Passionate Full Stack Developer specializing in React.js and Node.js, with a strong background in front-end and back-end web
                         development.</li>
