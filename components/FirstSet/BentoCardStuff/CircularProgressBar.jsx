@@ -1,25 +1,10 @@
 const CircularProgressBar = ({ progress }) => {
     return (
-        <div className="w-[40px] h-[40px] relative">
-            <svg viewBox="0  0  36  36" className="w-full h-full">
-                <path
-                    fill="none"
-                    d="M18  2.0845
-                        a  15.9155  15.9155  0  0  1  0  31.831
-                        a  15.9155  15.9155  0  0  1  0 -31.831"
-                    className="donut"
-                    strokeDasharray={`${progress},  100`}
-                    strokeWidth="4"
-                    // stroke is green above 70%, yellow between 50-70, red below 50
-                    stroke={progress > 70 ? "#4BDB61" : progress > 50 ? "#ffc107" : "#dc3545"}
-                    strokeLinecap="round"
-                     />
-            </svg>
 
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <p className="text-center text-xs">{progress}</p>
-            </div>
-        </div>
+        <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" checked disabled />
+            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none   rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-[#4BDB61]"></div>
+        </label>
     );
 };
 
