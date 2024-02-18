@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+@font-face{
+    font-family: 'SFPro';
+    src: url('/public/fonts/SF-Pro.ttf');
+}
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F7;
+    color: #1D1D1F;
+    font-family:'SFPro', sans-serif;
 }
