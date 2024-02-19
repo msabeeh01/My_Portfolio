@@ -15,7 +15,7 @@ const FirstSetCombine = () => {
                     <AboutMe />
                 </div>
 
-                <div className="gap-1 flex justify-stretch flex-wrap md:flex-row md:gap-4 w-full md:justify-start" data-aos="fade-right">
+                <div className="gap-1 flex justify-stretch flex-wrap md:flex-row md:gap-4 w-full md:justify-evenly" data-aos="fade-right">
                     <BentoCard skill={"React"} progress={100}/>
                     <BentoCard skill={"Next.js"} progress={100}/>
                     <BentoCard skill={"NodeJS"} progress={100}/>
