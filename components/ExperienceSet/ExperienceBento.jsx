@@ -7,13 +7,11 @@ const ExperienceSet = ({ title, emoji, job, position, skills, descItems }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="flex gap-4 flex-col">
+        <div className="flex gap-4 flex-col" data-aos="fade-up">
             {/* title spaces */}
+                <div className="bg-white rounded-2xl p-4 flex flex-col gap-4 shadow-[2px_4px_12px_rgba(0,0,0,.08)]">
 
-            <div data-aos="fade-up">
-                <div className="bg-white rounded-lg p-4 flex flex-col gap-4 shadow-[2px_4px_12px_rgba(0,0,0,.08)]">
-
-                    <div className="flex flex-row w-full justify-between place-items-center">
+                    <div className="flex flex-row w-full justify-between">
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold text-[#6E6E73]">
                                 {job.split(' ').map((word, index, array) => (
@@ -51,8 +49,6 @@ const ExperienceSet = ({ title, emoji, job, position, skills, descItems }) => {
                     }
 
                 </div>
-
-            </div>
 
         </div>
     )

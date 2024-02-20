@@ -1,3 +1,4 @@
+import EducationSetCombine from "@/components/EducationSet/EducationSetCombine";
 import ExperienceSet from "@/components/ExperienceSet/ExperienceBento";
 import ExperienceSetCombine from "@/components/ExperienceSet/ExperienceSetCombine";
 import FirstSetCombine from "@/components/FirstSet/FirstSetCombine";
@@ -13,6 +14,7 @@ export default function Home() {
         <FirstSetCombine />
         <ProjectSet />
         <ExperienceSetCombine />
+        <EducationSetCombine />
 
 
       </div>
