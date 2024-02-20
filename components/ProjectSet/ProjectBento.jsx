@@ -35,7 +35,7 @@ const ProjectBento = ({ name, description, skills, image }) => {
                                     <p>{description}</p>
                                 </div>
 
-                                <div style={{ cursor: "pointer" }} onClick={() => setOpen(!open)}>
+                                <div className="active:bg-[#F5F5F7] hover:bg-[#F5F5F7] transition h-10 w-10 flex justify-center items-center duration-200 rounded-full" style={{ cursor: "pointer" }} onClick={() => setOpen(!open)}>
                                     <p>{open ? "-" : "+"}</p>
                                 </div>
                             </div>

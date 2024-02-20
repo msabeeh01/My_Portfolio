@@ -9,7 +9,7 @@ const ExperienceSetCombine = () => {
 
             <div className="flex flex-col gap-4">
                 <ExperienceSet
-                    skills={["React", "Next.js", "Supabase", "Javascript", "TailwindCSS", "Redis", "Google OAuth", "Vercel"]}
+                    skills={["React", "Next.js", "Supabase", "Javascript", "TailwindCSS", "Redis", "Google OAuth", "Vercel", "Cypress"]}
                     descItems={["Engineered a dynamic, fully responsive website utilizing React and Next.js 13, ensuring a seamless user experience tailored to modern standards and industry best practices.",
                         "Architected and implemented a robust backend infrastructure with Redis caching, enhancing data retrieval speed and application performance. Supabase served as the secure and scalable hosting solution, guaranteeing reliable uptime and data security.",
                         "Integrated Google APIs to create a comprehensive student registration and management system, incorporating OAuth for secure authentication, streamlining administrative processes and improving user account management.",

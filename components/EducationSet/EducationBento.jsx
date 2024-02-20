@@ -4,7 +4,7 @@ import { useState } from "react";
 const EducationBento = ({ school, degree, location, coursework, date }) => {
     const [open, setOpen] = useState(false);
     return (
-        <div data-aos="fade-up" className="bg-white rounded-2xl flex flex-col w-full p-4 gap-4">
+        <div data-aos="fade-up" className="bg-white rounded-2xl flex flex-col w-full p-4 gap-4 shadow-[2px_4px_12px_rgba(0,0,0,.08)]">
             {/* education preview */}
             <div className="flex flex-row w-full justify-between">
                 <div className="flex flex-col">
@@ -16,7 +16,7 @@ const EducationBento = ({ school, degree, location, coursework, date }) => {
                     <p className="text-[#6E6E73]">{date}</p>
                 </div>
 
-                <div className="active:bg-[#F5F5F7] hover:bg-[#F5F5F7] transition h-10 w-10 flex justify-center items-center duration-200 rounded-full" style={{ cursor: "pointer" }} onClick={() => { setOpen(!open) }}>
+                <div className="active:bg-[#F5F5F7] hover:bg-[#F5F5F7] transition h-10 w-10 flex justify-center items-center duration-200 rounded-full cursor-pointer" onClick={() => { setOpen(!open) }}>
                     {/* + if closed - else */}
                     <p className="text-2xl">{open ? "-" : "+"}</p>
                 </div>
@@ -25,7 +25,7 @@ const EducationBento = ({ school, degree, location, coursework, date }) => {
 
             {/* hidden coursework table */}
             {open &&
-                <div className="grid grid-cols-3 bg-[#F5F5F7] rounded-2xl p-4">
+                <div className="grid grid-cols-3 bg-[#F5F5F7] rounded-2xl p-4" data-aos="fade-down">
                     {coursework.map((course) => (
                         <div className="p-2 gap-2 flex flex-col group ">
                             <div className="">{course}</div>
