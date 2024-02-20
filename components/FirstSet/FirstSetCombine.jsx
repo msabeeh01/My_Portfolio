@@ -5,7 +5,7 @@ import MemojiBento from "./MemojiBento";
 const FirstSetCombine = () => {
     return (
         // grid container, first col is 2/3, second col is 1/3
-        <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 gap-4 mb-2">
+        <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 gap-4">
 
             {/* about me and bento */}
             <div className="flex flex-col grid-cols-subgrid grid-rows-subgrid row-span-2 col-span-2 gap-2">
@@ -15,7 +15,7 @@ const FirstSetCombine = () => {
                     <AboutMe />
                 </div>
 
-                <div className="gap-1 flex justify-stretch flex-wrap md:flex-row md:gap-4 w-full md:justify-evenly" data-aos="fade-right">
+                <div className="gap-1 flex flex-wrap md:flex-row md:gap-4 w-full lg:justify-stretch place-items-center" data-aos="fade-right">
                     <BentoCard skill={"React"} progress={100}/>
                     <BentoCard skill={"Next.js"} progress={100}/>
                     <BentoCard skill={"NodeJS"} progress={100}/>

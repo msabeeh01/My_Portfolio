@@ -15,11 +15,15 @@ const ExperienceSet = ({ title, emoji, job, position, skills, descItems }) => {
 
                     <div className="flex flex-row w-full justify-between place-items-center">
                         <div className="flex flex-col">
-                            <p className="text-2xl font-bold">{job}</p>
+                            <p className="text-2xl font-bold text-[#6E6E73]">
+                                {job.split(' ').map((word, index, array) => (
+                                    index === 0 ? <span key={index} className="text-black">{word} </span> : word + (index !== array.length - 1 ? ' ' : '')
+                                ))}
+                            </p>
                             <p className="text-[#6E6E73]">{position}</p>
                         </div>
 
-                        <div className="" style={{ cursor: "pointer" }} onClick={() => setOpen(!open)}>
+                        <div className="active:bg-[#F5F5F7] hover:bg-[#F5F5F7] transition h-10 w-10 flex justify-center items-center duration-200 rounded-full" style={{ cursor: "pointer" }} onClick={() => { setOpen(!open) }}>
                             {/* + if closed - else */}
                             <p className="text-2xl">{open ? "-" : "+"}</p>
                         </div>

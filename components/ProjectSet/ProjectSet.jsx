@@ -8,11 +8,11 @@ import probono_freelance_bentoimage from "@/public/images/projects/probono_freel
 
 const ProjectSet = () => {
   return (
-    <div className="flex gap-4 flex-col">
+    <div className="flex flex-col">
       {/* title spaces */}
-      <div className="flex flex-col md:flex-row justify-between items-center my-6" data-aos="fade-up">
+      <div className="flex flex-col md:flex-row justify-between items-center my-14" data-aos="fade-up">
         <div className="text-6xl font-bold break-all">Projects</div>
-        <div className="text-4xl">📝</div>
+        <div className="text-4xl rounded-full bg-white p-4">📝</div>
       </div>
 
       {/* projects cards */}
@@ -46,6 +46,10 @@ const ProjectSet = () => {
         skills={["SvelteKit", "JavaScript", "TailwindCSS"]}
         image={probono_freelance_bentoimage}
         />
+
+        <ProjectBento />
+        <ProjectBento />
+        
       </div>
     </div>
   )

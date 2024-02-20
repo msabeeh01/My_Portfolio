@@ -2,9 +2,9 @@ const AboutMe = () => {
 
     return (
         <div className="flex w-full h-full flex-col" data-aos="fade-right">
-            <p className="text-6xl font-bold break-all">
+            <p className="text-6xl font-bold break-words">
                 Muhammad&nbsp;
-                <span className="text-6xl font-normal break-all text-[#6E6E73]">
+                <span className="text-6xl font-normal break-words text-[#6E6E73]">
                     Sabeeh
                 </span>
             </p>

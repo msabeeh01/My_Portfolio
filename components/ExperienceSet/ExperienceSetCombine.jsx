@@ -2,9 +2,9 @@ import ExperienceSet from "./ExperienceBento"
 const ExperienceSetCombine = () => {
     return (
         <div>
-            <div className="flex flex-col md:flex-row md:justify-between break-all my-6">
+            <div className="flex flex-col md:flex-row md:justify-between break-all my-14 items-center">
                 <div className="text-6xl font-bold">Experience</div>
-                <div className="text-4xl">💼</div>
+                <div className="text-4xl rounded-full bg-white p-4">💼</div>
             </div>
 
             <div className="flex flex-col gap-4">
