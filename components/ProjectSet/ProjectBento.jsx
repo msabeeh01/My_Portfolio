@@ -9,7 +9,7 @@ import project_placeholder from "@/public/images/projects/projectplaceholder.jpg
 
 import PillCard from "../ExperienceSet/PillCardStuff/PillCard"
 
-const ProjectBento = ({ name, description, skills, image }) => {
+const ProjectBento = ({ name, description, skills, image, link }) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
         Aos.init()
@@ -19,7 +19,7 @@ const ProjectBento = ({ name, description, skills, image }) => {
         <div data-aos="fade-up" className="m-0 p-0 w-full flex">
             <div className="group w-full relative shadow-[2px_4px_12px_rgba(0,0,0,.08)] bg-white h-[420px] rounded-2xl md:hover:scale-105 transition-all duration-200">
                 {/* Project Image */}
-                <Image src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" />
+                {link ? <a href={link} target="_blank"><Image src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" /></a> : <Image src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" />}
 
                 {/* if no props provided no div */}
                 {!name && !description && !skills && !image ? <div></div> :

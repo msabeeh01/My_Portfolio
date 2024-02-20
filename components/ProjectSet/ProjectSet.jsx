@@ -45,6 +45,7 @@ const ProjectSet = () => {
         description={"Probono Freelance Web and Mobile Web Development for a graphic designer"}
         skills={["SvelteKit", "JavaScript", "TailwindCSS"]}
         image={probono_freelance_bentoimage}
+        link={"https://glenathy-portfolio-msabeeh01.vercel.app"}
         />
 
         <ProjectBento />
