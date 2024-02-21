@@ -13,7 +13,9 @@ import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 const ProjectBento = ({ name, description, body, skills, image, link, github, bullets }) => {
     const [overlayOpen, setOverlayOpen] = useState(false);
+    const [open, setOpen] = useState(false);
     const overlayRef = useRef(null);
+
   
     const handleOverlayOpen = () => {
       setOverlayOpen(true);
