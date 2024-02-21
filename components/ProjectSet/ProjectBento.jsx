@@ -30,12 +30,10 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
 
     const handleOverlayOpen = () => {
         setOverlayOpen(true);
-        document.body.style.touchAction = 'none';
     }
 
     const handleOverlayClose = () => {
         setOverlayOpen(false);
-        document.body.style.touchAction = 'auto';
     }
 
     return (
@@ -89,7 +87,6 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
 
             {/* Overlay */}
             {overlayOpen && (
-                <div ref={overlayRef} className="fixed inset-0 z-50 flex items-center" data-aos="fade-up">
                     <ProjectOverlay
                         name={name}
                         body={body}
@@ -99,7 +96,6 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
                         github={github}
                         bullets={bullets}
                         onClose={handleOverlayClose} />
-                </div>
             )}
         </>
     )
