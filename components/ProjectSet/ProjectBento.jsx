@@ -90,7 +90,7 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
 
             {/* Overlay */}
             {overlayOpen && (
-                <div ref={overlayRef} className="fixed inset-0 z-50 flex items-center" data-aos="fade-up">
+                <div ref={overlayRef} className="fixed inset-0 z-50 flex items-center overflow-y-scroll" data-aos="fade-up">
                     <ProjectOverlay
                         name={name}
                         body={body}
