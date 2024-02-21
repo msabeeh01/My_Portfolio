@@ -30,10 +30,12 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
 
     const handleOverlayOpen = () => {
         setOverlayOpen(true);
+        document.body.style.touchAction = 'none';
     }
 
     const handleOverlayClose = () => {
         setOverlayOpen(false);
+        document.body.style.touchAction = 'auto';
     }
 
     return (
