@@ -12,32 +12,29 @@ import ProjectOverlay from "./OverlayStuff/ProjectOverlay"
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 const ProjectBento = ({ name, description, body, skills, image, link, github, bullets }) => {
-    const [overlayOpen, setOverlayOpen] = useState(false);
     const [open, setOpen] = useState(false);
+    const [overlayOpen, setOverlayOpen] = useState(false);
     const overlayRef = useRef(null);
-
-  
-    const handleOverlayOpen = () => {
-      setOverlayOpen(true);
-      disableBodyScroll(overlayRef.current);
-    }
-  
-    const handleOverlayClose = () => {
-      setOverlayOpen(false);
-      enableBodyScroll(overlayRef.current);
-    }
-  
-    useEffect(() => {
-      if (overlayOpen) {
-        disableBodyScroll(overlayRef.current);
-      } else {
-        enableBodyScroll(overlayRef.current);
-      }
-    }, [overlayOpen]);
 
     useEffect(() => {
         Aos.init()
     })
+
+    useEffect(() => {
+        if (overlayOpen) {
+            disableBodyScroll(document.body); // Disable body scroll when overlay is open
+        } else {
+            enableBodyScroll(document.body); // Enable body scroll when overlay is closed
+        }
+    }, [overlayOpen]);
+
+    const handleOverlayOpen = () => {
+        setOverlayOpen(true);
+    }
+
+    const handleOverlayClose = () => {
+        setOverlayOpen(false);
+    }
 
     return (
         <>
@@ -99,7 +96,7 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
                         link={link}
                         github={github}
                         bullets={bullets}
-                        ref={overlayRef} onClose={handleOverlayClose} />
+                        onClose={handleOverlayClose} />
                 </div>
             )}
         </>
