@@ -25,11 +25,11 @@ const EducationBento = ({ school, degree, location, coursework, date }) => {
 
             {/* hidden coursework table */}
             {open &&
-                <div className="grid grid-cols-3 bg-[#F5F5F7] rounded-2xl p-4" data-aos="fade-down">
+                <div className="grid grid-cols-3  bg-[#F5F5F7] rounded-2xl p-4" data-aos="fade-down">
                     {coursework.map((course) => (
-                        <div className="p-2 gap-2 flex flex-col group ">
+                        <div className="p-2 gap-2 flex flex-col group justify-between">
                             <div className="">{course}</div>
-                            <div className="w-full flex justify-end">
+                            <div className="w-full flex">
                                 <div className="border-b-2 w-[95%] group-hover:border-black transition duration-200">
 
                                 </div>

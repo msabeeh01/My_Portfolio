@@ -14,3 +14,25 @@ body{
     color: #1D1D1F;
     font-family:'SFPro', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
