@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
 const ProjectOverlay = ({ name, bullets, skills, body, image, link, github, onClose}) => {
 
     return (
-        <div className="fixed inset-0 z-50 items-center flex">
+        <div className=" inset-0 z-50 items-center flex">
         <div className="flex flex-col bg-white gap-4 p-10 mx-10 my-10 h-full md:h-fit rounded-2xl scrollbar-hide overflow-auto">
             <div className="flex flex-col gap-4">
                 <div className="w-full flex justify-end cursor-pointer">

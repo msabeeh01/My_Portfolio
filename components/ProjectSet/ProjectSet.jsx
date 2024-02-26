@@ -16,7 +16,7 @@ const ProjectSet = () => {
       </div>
 
       {/* projects cards */}
-      <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-4">
+      <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
 
         <ProjectBento
@@ -46,17 +46,6 @@ const ProjectSet = () => {
             "Configured MongoDB Atlas models, controllers, and API routes using Mongoose, establishing a robust and scalable backend infrastructure.",
             "Documented the development process using UML diagrams, test cases, user stories, and conducted acceptance testing to ensure high-quality delivery"]} />
 
-
-
-
-        <ProjectBento
-          name={"Graphic Designer's Portfolio"}
-          description={"Probono Freelance Web and Mobile Web Development for a graphic designer"}
-          skills={["SvelteKit", "JavaScript", "TailwindCSS"]}
-          image={probono_freelance_bentoimage}
-          link={"https://glenathy-portfolio-msabeeh01.vercel.app"}
-        />
-
         <ProjectBento
           name={"Experiments"}
           description={"A repo for experimenting and learning new things via half baked projects"}
@@ -64,8 +53,6 @@ const ProjectSet = () => {
           image={experiments_bentoimage}
           link={"https://github.com/msabeeh01/experiments_library"} />
 
-        <ProjectBento />
-        <ProjectBento />
 
       </div>
     </div>

@@ -8,16 +8,54 @@ const ExperienceSetCombine = () => {
             </div>
 
             <div className="flex flex-col gap-4">
+                {/*  Developed a responsive web application leveraging React, Next.js, and Node.js, enhancing user experience
+• Implemented a high-performance back end infrastructure using Redis cloud caching, achieving a 40% improvement in data
+retrieval speed and a 50% boost in application performance.
+• Implemented Supabase as the secure hosting solution, ensuring 99.9% uptime and robust data security
+• Incorporated Google APIs into a student registration and management system, utilizing OAuth for secure authentication
+resulting in a 30% reduction in administrative overhead and smoother operations.
+• Designed intuitive and visually appealing interfaces using CSS and TailwindCSS, aligning with modern design principles.
+• Managed CI/CD pipelines via Vercel, automating build, test, and deployment processes to reduce manual errors and expedite
+time-to-market, Reducing deployment times by 60% and errors by 45%, resulting in faster releases and higher-quality
+software.
+• Conducted automated comprehensive end-to-end and component testing with Cypress, ensuring application reliability and
+early issue detection, identifying and resolving 80% of potential issues before deployment, significantly reducing post-release
+bugs */}
                 <ExperienceSet
                     skills={["React", "Next.js", "Supabase", "Javascript", "TailwindCSS", "Redis", "Google OAuth", "Vercel", "Cypress"]}
-                    descItems={["Engineered a dynamic, fully responsive website utilizing React and Next.js 13, ensuring a seamless user experience tailored to modern standards and industry best practices.",
-                        "Architected and implemented a robust backend infrastructure with Redis caching, enhancing data retrieval speed and application performance. Supabase served as the secure and scalable hosting solution, guaranteeing reliable uptime and data security.",
-                        "Integrated Google APIs to create a comprehensive student registration and management system, incorporating OAuth for secure authentication, streamlining administrative processes and improving user account management.",
-                        "Leveraged CSS and TailwindCSS to craft visually appealing and intuitive interfaces, adhering to modern design principles and ensuring a cohesive and engaging user journey.",
-                        "Managed continuous integration and delivery (CI/CD) pipelines through Vercel, automating the build, test, and deployment cycles, thus reducing manual errors and accelerating time-to-market.",
-                        "Executed end-to-end and component testing using Cypress, ensuring the fidelity and reliability of the entire application, and identifying potential issues early in the development lifecycle."]}
-                    position={"Freelance Software Engineer, Fullstack"}
+                    descItems={["Developed a responsive web application leveraging React, Next.js, and Node.js, enhancing user experience.",
+                        "Implemented a high-performance back end infrastructure using Redis cloud caching, achieving a 40% improvement in data retrieval speed and a 50% boost in application performance.",
+                        "Implemented Supabase as the secure hosting solution, ensuring 99.9% uptime and robust data security.",
+                        "Incorporated Google APIs into a student registration and management system, utilizing OAuth for secure authentication resulting in a 30% reduction in administrative overhead and smoother operations.",
+                        "Designed intuitive and visually appealing interfaces using CSS and TailwindCSS, aligning with modern design principles.",
+                        "Managed CI/CD pipelines via Vercel, automating build, test, and deployment processes to reduce manual errors and expedite time-to-market, Reducing deployment times by 60% and errors by 45%, resulting in faster releases and higher-quality software.",
+                        "Conducted automated comprehensive end-to-end and component testing with Cypress, ensuring application reliability and early issue detection, identifying and resolving 80% of potential issues before deployment, significantly reducing post-release bugs."]}
+                    position={"Freelance Software Engineer, Full stack"}
                     job={"Prism Driving School"}
+                />
+
+                {/*  Engineered a portfolio website using SvelteKit, leveraging its component-based architecture and optimized compilation for a
+lean, high-performance site that meets modern web standards, yielding a 30% reduction in page load times and a 20% increase
+in site responsiveness.
+• Collaborated with a Graphic Designer to develop a responsive, intuitive design using CSS and TailwindCSS, enhancing
+smooth navigation and user engagement.
+• Streamlined deployment process by implementing Vercel CLI, enabling seamless Git integration; automated build, test,
+deployment cycles, reducing manual errors and accelerating time-to-market for new features and updates by 40%.
+• Ensured cross-browser compatibility and optimal performance using Cypress automated testing, achieving a 95%
+compatibility rate and a 20% improvement in load times across all browsers.
+
+*/}
+
+                <ExperienceSet
+                    skills={["SvelteKit", "CSS", "TailwindCSS", "Vercel", "Cypress", "GitHub"]}
+                    descItems={[
+                        "Engineered a portfolio website using SvelteKit, leveraging its component-based architecture and optimized compilation for a lean, high-performance site that meets modern web standards, yielding a 30% reduction in page load times and a 20% increase in site responsiveness.",
+                        "Collaborated with a Graphic Designer to develop a responsive, intuitive design using CSS and TailwindCSS, enhancing smooth navigation and user engagement.",
+                        "Streamlined deployment process by implementing Vercel CLI, enabling seamless Git integration; automated build, test, deployment cycles, reducing manual errors and accelerating time-to-market for new features and updates by 40%.",
+                        "Ensured cross-browser compatibility and optimal performance using Cypress automated testing, achieving a 95% compatibility rate and a 20% improvement in load times across all browsers."]
+                    }
+                    position={"Freelance Software Engineer, Full stack"}
+                    job={"Glen Chan-Choong"}
                 />
 
                 {/* dont touch until NDA is confirmed  */}

@@ -20,7 +20,7 @@ const EducationSetCombine = () => {
                 school={"Centennial College"}
                 location={"Scarborough, ON"}
                 date={"2021 - Present"}
-                degree={"Software Engineering Technology - Game Programming Advanced Diploma (GPA: 4.2)"}
+                degree={"Software Engineering Technology - Game Programming Advanced DCS (GPA: 4.2)"}
                 />
         </div>
     )
