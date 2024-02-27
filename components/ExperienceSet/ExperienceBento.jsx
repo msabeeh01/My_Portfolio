@@ -3,7 +3,7 @@ import ProjectBento from "../ProjectSet/ProjectBento"
 import PillCard from "./PillCardStuff/PillCard"
 import { useState } from "react"
 
-const ExperienceSet = ({ title, emoji, job, position, skills, descItems }) => {
+const ExperienceSet = ({ title, emoji, job, position, skills, descItems, date }) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -19,6 +19,7 @@ const ExperienceSet = ({ title, emoji, job, position, skills, descItems }) => {
                                 ))}
                             </p>
                             <p className="text-[#6E6E73]">{position}</p>
+                            <p className="text-[#6E6E73] italic">{date}</p>
                         </div>
 
                         <div className="active:bg-[#F5F5F7] hover:bg-[#F5F5F7] transition h-10 w-10 flex justify-center items-center duration-200 rounded-full" style={{ cursor: "pointer" }} onClick={() => { setOpen(!open) }}>
