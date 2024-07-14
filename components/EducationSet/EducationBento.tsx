@@ -1,7 +1,15 @@
 "use client"
 import { useState } from "react";
 
-const EducationBento = ({ school, degree, location, coursework, date }) => {
+interface EducationBentoProps {
+    school: string
+    degree: string
+    location: string
+    coursework: string[]
+    date: string
+}
+
+const EducationBento: React.FC<EducationBentoProps> = ({ school, degree, location, coursework, date }) => {
     const [open, setOpen] = useState(false);
     return (
         <div data-aos="fade-up" className="bg-white rounded-2xl flex flex-col w-full p-4 gap-4 shadow-[2px_4px_12px_rgba(0,0,0,.08)]">
@@ -26,7 +34,7 @@ const EducationBento = ({ school, degree, location, coursework, date }) => {
             {/* hidden coursework table */}
             {open &&
                 <div className="grid grid-cols-3  bg-[#F5F5F7] rounded-2xl p-4" data-aos="fade-down">
-                    {coursework.map((course) => (
+                    {coursework?.map((course) => (
                         <div className="p-2 gap-2 flex flex-col group justify-between">
                             <div className="">{course}</div>
                             <div className="w-full flex">

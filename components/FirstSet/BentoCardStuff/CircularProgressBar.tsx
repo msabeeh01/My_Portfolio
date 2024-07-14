@@ -1,4 +1,8 @@
-const CircularProgressBar = ({ progress }) => {
+interface CircularProgressBarProps {
+    progress: number;
+}
+
+const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ progress }) => {
     return (
 
         <label className="inline-flex items-center cursor-pointer">

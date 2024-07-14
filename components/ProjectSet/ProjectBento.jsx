@@ -20,13 +20,13 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
         Aos.init()
     })
 
-    useEffect(() => {
-        if (overlayOpen) {
-            disableBodyScroll(window); // Disable body scroll when overlay is open
-        } else {
-            enableBodyScroll(window); // Enable body scroll when overlay is closed
-        }
-    }, [overlayOpen]);
+    // useEffect(() => {
+    //     if (overlayOpen) {
+    //         disableBodyScroll(window); // Disable body scroll when overlay is open
+    //     } else {
+    //         enableBodyScroll(window); // Enable body scroll when overlay is closed
+    //     }
+    // }, [overlayOpen]);
 
     const handleOverlayOpen = () => {
         setOverlayOpen(true);

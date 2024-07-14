@@ -3,7 +3,17 @@ import ProjectBento from "../ProjectSet/ProjectBento"
 import PillCard from "./PillCardStuff/PillCard"
 import { useState } from "react"
 
-const ExperienceSet = ({ title, emoji, job, position, skills, descItems, date }) => {
+interface ExperienceSetProps {
+    title?: string
+    emoji?: string
+    job: string
+    position: string
+    skills: string[]
+    descItems: string[]
+    date: string
+}
+
+const ExperienceSet = ({ job, position, skills, descItems, date }) => {
     const [open, setOpen] = useState(false);
 
     return (

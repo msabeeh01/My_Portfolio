@@ -1,5 +1,4 @@
 import EducationSetCombine from "@/components/EducationSet/EducationSetCombine";
-import ExperienceSet from "@/components/ExperienceSet/ExperienceBento";
 import ExperienceSetCombine from "@/components/ExperienceSet/ExperienceSetCombine";
 import FirstSetCombine from "@/components/FirstSet/FirstSetCombine";
 import Footer from "@/components/Footer/Footer";
