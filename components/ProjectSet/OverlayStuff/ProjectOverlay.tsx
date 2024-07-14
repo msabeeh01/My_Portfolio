@@ -4,12 +4,21 @@ import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import PillCard from "@/components/ExperienceSet/PillCardStuff/PillCard";
 import { useEffect, useRef } from "react";
 
-const ProjectOverlay = ({
+interface ProjectOverlayProps {
+  name: string;
+  bullets: string[];
+  skills: string[];
+  body: string;
+  link: string;
+  github: string;
+  onClose: () => void;
+}
+
+const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
   name,
   bullets,
   skills,
   body,
-  image,
   link,
   github,
   onClose,
@@ -17,7 +26,8 @@ const ProjectOverlay = ({
     
   return (
     <div className="fixed top-0 left-0 right-0 bottom-0 overflow-scroll justify-center items-center z-50 bg-black bg-opacity-50">
-      <div className="flex flex-col bg-white gap-4 p-10 mx-10 rounded-2xl">
+      <div className="flex md:h-full md:place-items-center" >
+      <div className="flex flex-col bg-white gap-4 p-10 mx-10 rounded-2xl md:place-items-center">
         <div className="flex flex-col gap-4">
           <div className="w-full flex justify-end cursor-pointer">
             <p
@@ -65,6 +75,7 @@ const ProjectOverlay = ({
         ) : (
           <></>
         )}
+      </div>
       </div>
     </div>
   );

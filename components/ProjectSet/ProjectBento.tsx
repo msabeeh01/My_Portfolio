@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect, useRef, useState } from "react"
@@ -11,7 +11,18 @@ import PillCard from "../ExperienceSet/PillCardStuff/PillCard"
 import ProjectOverlay from "./OverlayStuff/ProjectOverlay"
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
-const ProjectBento = ({ name, description, body, skills, image, link, github, bullets }) => {
+interface ProjectBentoProps {
+    name: string
+    description: string
+    body?: string
+    skills: string[]
+    image: StaticImageData
+    link?: string
+    github?: string
+    bullets?: string[]
+}
+
+const ProjectBento: React.FC<ProjectBentoProps> = ({ name, description, body, skills, image, link, github, bullets }) => {
     const [open, setOpen] = useState(false);
     const [overlayOpen, setOverlayOpen] = useState(false);
     const overlayRef = useRef(null);
@@ -44,10 +55,10 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
                     {/* Project Image */}
                     {link ?
                         <a href={link} target="_blank">
-                            <Image src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" />
+                            <Image alt="project" src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" />
                         </a>
                         :
-                        <Image src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" onClick={handleOverlayOpen} />}
+                        <Image alt="project" src={image ? image : project_placeholder} quality={100} className="object-cover h-full rounded-2xl w-full" onClick={handleOverlayOpen} />}
 
                     {/* if no props provided no div */}
                     {/* white text section */}
@@ -87,11 +98,12 @@ const ProjectBento = ({ name, description, body, skills, image, link, github, bu
 
             {/* Overlay */}
             {overlayOpen && (
+
+
                     <ProjectOverlay
                         name={name}
                         body={body}
                         skills={skills}
-                        image={image}
                         link={link}
                         github={github}
                         bullets={bullets}
