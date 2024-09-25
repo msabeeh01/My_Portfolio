@@ -3,13 +3,12 @@
 import Image, { StaticImageData } from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import project_placeholder from "@/public/images/projects/projectplaceholder.jpg";
 
 import PillCard from "../ExperienceSet/PillCardStuff/PillCard";
 import ProjectOverlay from "./OverlayStuff/ProjectOverlay";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 interface ProjectBentoProps {
   name: string;
@@ -34,7 +33,6 @@ const ProjectBento: React.FC<ProjectBentoProps> = ({
 }) => {
   const [open, setOpen] = useState(false);
   const [overlayOpen, setOverlayOpen] = useState(false);
-  const overlayRef = useRef(null);
 
   useEffect(() => {
     Aos.init();
@@ -129,4 +127,3 @@ const ProjectBento: React.FC<ProjectBentoProps> = ({
 };
 
 export default ProjectBento;
-

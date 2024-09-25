@@ -63,6 +63,7 @@ const ProjectSet = () => {
             "Firebase",
           ]}
           image={driveroo_bentoimage}
+          github={"https://github.com/msabeeh01/Driveroo"}
           bullets={[
             "Spearheaded the design and development of a ride-sharing platform using JavaScript, React Native, and ExpressJS, with a backend built on NodeJS.",
             "Created a custom authentication flow from scratch using React Context, Expo Secure Store, and JWT, providing a secure and seamless login experience for users.",
@@ -87,4 +88,3 @@ const ProjectSet = () => {
 };
 
 export default ProjectSet;
-
