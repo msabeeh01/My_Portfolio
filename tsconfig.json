@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".", // This should be set to the root of your project
     "paths": {
-      "@/*": ["./*"] // Assuming your components directory is at the root
+      "@/*": [
+        "./*"
+      ] // Assuming your components directory is at the root
     },
     "lib": [
       "dom",
@@ -24,7 +26,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
@@ -32,8 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "**/*.jsx",
-
+    "**/*.jsx"
   ],
   "exclude": [
     "node_modules"

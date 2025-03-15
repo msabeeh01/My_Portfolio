@@ -1,6 +1,7 @@
 
 import Head from "next/head";
 import "./globals.css";
+import { ThemeContextProvider } from "@/contexts/ThemeContext";
 
 
 export const metadata = {
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>{children}</body>
+      <body><ThemeContextProvider>{children}</ThemeContextProvider></body>
     </html>
   );
 }
