@@ -27,7 +27,7 @@ const experiences = [
   },
   {
     job: "Prism Driving School",
-    position: "Freelance Software Engineer, Full stack",
+    position: "Software Engineer, Full stack",
     skills: [
       "React",
       "Next.js",
@@ -47,7 +47,7 @@ const experiences = [
 "Built CSS component library to standardize UI across app screens, reducing feature dev time from 3 to 1 day(s).",
       
     ],
-    date: "May 2023 - March 2024",
+    date: "May 2022 - March 2024",
   },
   {
     job: "Hakka Designs",
