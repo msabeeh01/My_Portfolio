@@ -1,23 +1,24 @@
-
 import Head from "next/head";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/next'
-
-
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Muhammad Sabeeh",
-  description: "Comprehensive Digital Portfolio for Muhammad Sabeeh, Full Stack Developer.",
+  description:
+    "Comprehensive Digital Portfolio for Muhammad Sabeeh, Full Stack Developer.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <Head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body><Analytics />{children}</body>
+      <body>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }

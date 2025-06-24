@@ -7,6 +7,14 @@
     src: url('/public/fonts/SF-Pro.ttf');
 } */
 
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .inactive {
   color: #8598BC;
 }
@@ -14,8 +22,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
-    color: #1D1D1F;
+    font-family: 'Inter', system-ui, sans-serif;
 }
 
 /* width */

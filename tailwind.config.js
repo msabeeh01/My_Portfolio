@@ -13,26 +13,29 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       scrollbarHide: {
-        '-ms-overflow-style': 'none',
-        'scrollbar-width': 'none',
+        "-ms-overflow-style": "none",
+        "scrollbar-width": "none",
+      },
+      fontFamily: {
+        inter: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
     function ({ addUtilities }) {
       const newUtilities = {
-        '.scrollbar-hide': {
-          '-ms-overflow-style': 'none',
-          'scrollbar-width': 'none',
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
         },
-        '.scrollbar-hide::-webkit-scrollbar': {
-          display: 'none',
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none",
         },
-      }
-      addUtilities(newUtilities)
-    }
+      };
+      addUtilities(newUtilities);
+    },
   ],
 };
