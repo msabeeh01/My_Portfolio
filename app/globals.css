@@ -1,18 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @font-face{
     font-family: 'SFPro';
     src: url('/public/fonts/SF-Pro.ttf');
+} */
+
+.inactive {
+  color: #8598BC;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #F5F5F7;
+    background-color: gray;
     color: #1D1D1F;
-    font-family:'SFPro', sans-serif;
 }
 
 /* width */
