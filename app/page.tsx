@@ -18,12 +18,14 @@ const jobs = [
     startDate: "2025",
     endDate: "PRESENT",
     desc: "Co-founder of a startup",
+    link: "https://trysorta.com",
   },
   {
     position: "Turina Technologies",
     startDate: "2024",
     endDate: "PRESENT",
     desc: "Lead the development of two cross-platform fintech mobile applications using React Native, consistently rated 4.6★+ on both iOS and Android. Engineered and shipped a design system to unify UI/UX across the apps, reducing engineering redundancy and speeding up time-to-release. Collaborated with designers and backend engineers to scope, prioritize, and deliver features in an agile environment. Owned performance and CI/CD improvements, enabling faster, leaner deployments.",
+    link: "https://turinatech.ca/",
   },
 
   {
@@ -31,12 +33,14 @@ const jobs = [
     startDate: "2022",
     endDate: "2023",
     desc: "Designed and deployed a scalable lesson booking platform supporting 200+ monthly users. Modernized infrastructure with Redis caching and Supabase migration to streamline performance and reduce admin overhead. Standardized UI components and automated deployments, cutting delivery cycles by over 80%. Owned end-to-end architecture across frontend, backend, and cloud layers.",
+    link: "https://prismdriving.ca",
   },
   {
     position: "Hakka Designs",
     startDate: "2023",
     endDate: "2023",
     desc: "Rebuilt a high-performance portfolio site for a creative agency, replacing a legacy WordPress installation. Achieved 70% reduction in image payload via responsive image optimization. Integrated Contentful CMS to enable clients to manage and publish content independently in minutes.",
+    link: "https://glendotcc.vercel.app/",
   },
 ];
 
@@ -45,11 +49,13 @@ const projects = [
     position: "Cockatrice/Webatrice",
     startDate: "2025",
     desc: "Contributed to porting a legacy C++ card game to the web using Vue.js, supporting 800+ daily users. Developed real-time client-server communication with WebSockets and Express.js. Integrated gRPC proto headers for seamless cross-platform play and implemented Quasar for a consistent, material-design UI.",
+    link: "https://github.com/Cockatrice/Cockatrice"
   },
   {
     position: "Traffic Sign Detection",
     startDate: "2025",
     desc: "Built a full-stack autonomous driving simulation app using a custom-trained YOLOv11n model on 3K+ traffic sign images. Improved model accuracy by 40% through hyperparameter tuning. Developed a Flask backend to serve the model and a React frontend for live demos, delivering a seamless interactive experience.",
+    link: "https://github.com/msabeeh01/TrafficSignDetection_YoloV8"
   },
 ];
 
@@ -75,18 +81,18 @@ export default function Home() {
       }}
     >
       {/* Grid layout with sticky left and scrollable right */}
-      <div className="flex mx-80 justify-center">
+      <div className="flex flex-col lg:flex-row lg:mx-80 items-center lg:items-start lg:py-0 justify-center">
         {/* LEFT: Sticky */}
-        <div className="block w-[50%] sticky top-0 h-screen py-24 px-24 flex-col justify-center">
+        <div className="h-screen lg:block lg:w-[50%] lg:sticky lg:top-0 lg:h-screen py-24 lg:px-24 lg:flex-col lg:justify-center">
           <div className="flex flex-col h-full">
             <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
               Muhammad Sabeeh
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-              Front End Engineer
+              Full Stack Engineer
             </h2>
             <p className="mt-4 max-w-xs leading-normal text-slate-400">
-              I build accessible, pixel-perfect digital experiences for the web.
+              Full-stack developer blending design finesse with engineering depth — from performant UIs to scalable backends.
             </p>
 
             <div className="h-full flex flex-col justify-between">
@@ -138,7 +144,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT: Scrollable Content */}
-        <div className="w-[50%] py-24 text-white">
+        <div className="w-full flex justify-center items-center flex-col lg:block lg:w-[50%] py-24 text-white">
           <div className="flex flex-col gap-4 max-w-[90%] inactive" id="about">
             <div>
               I'm a software developer who loves building well-crafted digital
@@ -190,6 +196,7 @@ export default function Home() {
                   startDate={item.startDate}
                   endDate={item.endDate}
                   desc={item.desc}
+                  link={item.link}
                   isHovered={hoveredIndex === index}
                   isAnyHovered={hoveredIndex !== null}
                 />
@@ -237,6 +244,7 @@ export default function Home() {
                   position={item.position}
                   startDate={item.startDate}
                   desc={item.desc}
+                  link={item.link}
                   isHovered={hoveredIndex === index}
                   isAnyHovered={hoveredIndex !== null}
                 />
