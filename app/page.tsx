@@ -14,14 +14,14 @@ import {
 
 const jobs = [
   {
-    position: "Sorta",
+    position: "Co-founder, Lead Developer, Sorta",
     startDate: "2025",
     endDate: "PRESENT",
     desc: "Co-founder of a startup",
     link: "https://trysorta.com",
   },
   {
-    position: "Turina Technologies",
+    position: "Frontend Mobile Engineer, Turina Technologies",
     startDate: "2024",
     endDate: "PRESENT",
     desc: "Lead the development of two cross-platform fintech mobile applications using React Native, consistently rated 4.6★+ on both iOS and Android. Engineered and shipped a design system to unify UI/UX across the apps, reducing engineering redundancy and speeding up time-to-release. Collaborated with designers and backend engineers to scope, prioritize, and deliver features in an agile environment. Owned performance and CI/CD improvements, enabling faster, leaner deployments.",
@@ -29,14 +29,14 @@ const jobs = [
   },
 
   {
-    position: "Prism Driving School",
+    position: "Full stack Engineer, Prism Driving School",
     startDate: "2022",
     endDate: "2023",
     desc: "Designed and deployed a scalable lesson booking platform supporting 200+ monthly users. Modernized infrastructure with Redis caching and Supabase migration to streamline performance and reduce admin overhead. Standardized UI components and automated deployments, cutting delivery cycles by over 80%. Owned end-to-end architecture across frontend, backend, and cloud layers.",
     link: "https://prismdriving.ca",
   },
   {
-    position: "Hakka Designs",
+    position: "Frontend Engineer, Hakka Designs",
     startDate: "2023",
     endDate: "2023",
     desc: "Rebuilt a high-performance portfolio site for a creative agency, replacing a legacy WordPress installation. Achieved 70% reduction in image payload via responsive image optimization. Integrated Contentful CMS to enable clients to manage and publish content independently in minutes.",
@@ -64,6 +64,7 @@ export default function Home() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   useEffect(() => {
+    setPosition({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
     const handleMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
@@ -157,10 +158,7 @@ export default function Home() {
               Currently, I’m a Frontend Engineer at Turina Technologies, where
               I’ve delivered production-ready fintech apps using React Native,
               improved performance and release cycles, and led feature planning
-              to align engineering with design. Before that, I worked as a
-              Fullstack Developer at Prism Driving, launching a booking
-              platform, optimizing backend performance with Redis, and
-              automating deployments to save hours of manual work each week.
+              to align engineering with design.
             </div>
             <div>
               Beyond client and product work, I’ve contributed to open-source
@@ -168,8 +166,7 @@ export default function Home() {
               client to the web using Vue.js and WebSockets—enabling
               cross-platform play for hundreds of daily users. I also enjoy
               experimenting with machine learning, like building a traffic sign
-              detection app with a YOLO model and deploying it through a Flask +
-              React stack.
+              detection app.
             </div>
             <div>
               When I’m not coding, I’m likely playing Magic: The Gathering,
