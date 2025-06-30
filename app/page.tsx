@@ -82,9 +82,9 @@ export default function Home() {
 
   return (
     <div
-      className="relative min-h-screen w-full"
+      className="relative h-full w-full"
       style={{
-        background: `radial-gradient(circle at ${position.x}px ${position.y}px, #370617, #03071e`,
+        background: `radial-gradient(circle at ${position.x}px ${position.y}px, #2D0D89, #03071e`,
         transition: "background 0.1s ease-out",
       }}
     >
@@ -93,10 +93,10 @@ export default function Home() {
         {/* LEFT: Sticky */}
         <div className="h-screen xl:block xl:w-[50%] xl:sticky xl:top-0 xl:h-screen py-24 xl:px-24 xl:flex-col xl:justify-center">
           <div className="flex flex-col h-full">
-            <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-[#1DFCF5] sm:text-5xl">
               Muhammad Sabeeh
             </h1>
-            <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+            <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-400 sm:text-xl">
               Full Stack Engineer
             </h2>
             <p className="mt-4 max-w-xs leading-normal text-slate-400">
