@@ -27,6 +27,13 @@ const jobs = [
     desc: "Lead the development of two cross-platform fintech mobile applications using React Native, consistently rated 4.6★+ on both iOS and Android. Engineered and shipped a design system to unify UI/UX across the apps, reducing engineering redundancy and speeding up time-to-release. Collaborated with designers and backend engineers to scope, prioritize, and deliver features in an agile environment. Owned performance and CI/CD improvements, enabling faster, leaner deployments.",
     link: "https://turinatech.ca/",
   },
+  {
+    position: "Fullstack Developer, DocTalk",
+    startDate: "2023",
+    endDate: "2024",
+    desc: "Engineered modular platform tools in Next.js for seamless reuse across multiple internal applications. Transformed user-generated content from the Notion API into structured JSON for dynamic rendering via custom templates. Developed a branching form builder in React that adapts to user input and supports complex, client-specific logic. Implemented real-time messaging with Supabase Realtime and persisted shared video session state for Agora-powered calls. Designed and integrated a real-time and scheduled notification system using RabbitMQ. Managed authentication and ABAC-based authorization with Auth0 to ensure secure, role-aware access across environments.",
+    link: "https://www.doctalk.com/"
+  },
 
   {
     position: "Full stack Engineer, Prism Driving School",
@@ -82,9 +89,9 @@ export default function Home() {
       }}
     >
       {/* Grid layout with sticky left and scrollable right */}
-      <div className="flex flex-col lg:flex-row lg:mx-80 items-center lg:items-start lg:py-0 justify-center">
+      <div className="flex flex-col xl:flex-row lg:mx-80 items-center lg:items-start lg:py-0 justify-center">
         {/* LEFT: Sticky */}
-        <div className="h-screen lg:block lg:w-[50%] lg:sticky lg:top-0 lg:h-screen py-24 lg:px-24 lg:flex-col lg:justify-center">
+        <div className="h-screen xl:block xl:w-[50%] xl:sticky xl:top-0 xl:h-screen py-24 xl:px-24 xl:flex-col xl:justify-center">
           <div className="flex flex-col h-full">
             <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
               Muhammad Sabeeh
@@ -145,7 +152,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT: Scrollable Content */}
-        <div className="w-full flex justify-center items-center flex-col lg:block lg:w-[50%] py-24 text-white">
+        <div className="w-full flex justify-center items-center flex-col xl:block xl:w-[50%] py-24 text-white">
           <div className="flex flex-col gap-4 max-w-[90%] inactive" id="about">
             <div>
               I'm a software developer who loves building well-crafted digital
