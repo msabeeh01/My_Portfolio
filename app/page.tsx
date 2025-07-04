@@ -36,7 +36,7 @@ const jobs = [
   },
 
   {
-    position: "Full stack Engineer, Prism Driving School",
+    position: "Fullstack Engineer, Prism Driving School",
     startDate: "2022",
     endDate: "2023",
     desc: "Designed and deployed a scalable lesson booking platform supporting 200+ monthly users. Modernized infrastructure with Redis caching and Supabase migration to streamline performance and reduce admin overhead. Standardized UI components and automated deployments, cutting delivery cycles by over 80%. Owned end-to-end architecture across frontend, backend, and cloud layers.",
