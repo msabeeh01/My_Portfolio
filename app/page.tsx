@@ -18,7 +18,7 @@ const jobs = [
     startDate: "2025",
     endDate: "PRESENT",
     desc: "Co-founder of a startup",
-    link: "https://trysorta.com",
+    link: "https://planwithsorta.com",
   },
   {
     position: "Frontend Mobile Engineer, Turina Technologies",
@@ -93,7 +93,7 @@ export default function Home() {
         {/* LEFT: Sticky */}
         <div className="h-screen xl:block xl:w-[50%] xl:sticky xl:top-0 xl:h-screen py-24 xl:px-24 xl:flex-col xl:justify-center">
           <div className="flex flex-col h-full">
-            <h1 className="text-4xl font-bold tracking-tight text-[#1DFCF5] sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
               Muhammad Sabeeh
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-400 sm:text-xl">
