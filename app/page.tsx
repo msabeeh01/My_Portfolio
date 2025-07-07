@@ -14,14 +14,14 @@ import {
 
 const jobs = [
   {
-    position: "Co-founder, Lead Developer, Sorta",
+    position: "Co-founder, Lead Developer, Sorta - Startup",
     startDate: "2025",
     endDate: "PRESENT",
     desc: "Co-founder of a startup",
     link: "https://planwithsorta.com",
   },
   {
-    position: "Frontend Mobile Engineer, Turina Technologies",
+    position: "Frontend Mobile Engineer, Turina Technologies - Startup",
     startDate: "2024",
     endDate: "PRESENT",
     desc: "Lead the development of two cross-platform fintech mobile applications using React Native, consistently rated 4.6★+ on both iOS and Android. Engineered and shipped a design system to unify UI/UX across the apps, reducing engineering redundancy and speeding up time-to-release. Collaborated with designers and backend engineers to scope, prioritize, and deliver features in an agile environment. Owned performance and CI/CD improvements, enabling faster, leaner deployments.",
@@ -32,13 +32,13 @@ const jobs = [
     startDate: "2023",
     endDate: "2024",
     desc: "Engineered modular platform tools in Next.js for seamless reuse across multiple internal applications. Transformed user-generated content from the Notion API into structured JSON for dynamic rendering via custom templates. Developed a branching form builder in React that adapts to user input and supports complex, client-specific logic. Implemented real-time messaging with Supabase Realtime and persisted shared video session state for Agora-powered calls. Designed and integrated a real-time and scheduled notification system using RabbitMQ. Managed authentication and ABAC-based authorization with Auth0 to ensure secure, role-aware access across environments.",
-    link: "https://www.doctalk.com/"
+    link: "https://www.doctalk.com/",
   },
 
   {
-    position: "Fullstack Engineer, Prism Driving School",
-    startDate: "2022",
-    endDate: "2023",
+    position: "Fullstack Engineer, Prism Driving School - Startup",
+    startDate: "2023",
+    endDate: "2024",
     desc: "Designed and deployed a scalable lesson booking platform supporting 200+ monthly users. Modernized infrastructure with Redis caching and Supabase migration to streamline performance and reduce admin overhead. Standardized UI components and automated deployments, cutting delivery cycles by over 80%. Owned end-to-end architecture across frontend, backend, and cloud layers.",
     link: "https://prismdriving.ca",
   },
@@ -46,23 +46,33 @@ const jobs = [
     position: "Frontend Engineer, Hakka Designs",
     startDate: "2023",
     endDate: "2023",
-    desc: "Rebuilt a high-performance portfolio site for a creative agency, replacing a legacy WordPress installation. Achieved 70% reduction in image payload via responsive image optimization. Integrated Contentful CMS to enable clients to manage and publish content independently in minutes.",
+    desc: "Rebuilt a high-performance portfolio for a creative agency, replacing a legacy WordPress installation. Achieved 70% reduction in image payload via responsive image optimization. Integrated Contentful CMS to enable clients to manage and publish content independently in minutes.",
     link: "https://glendotcc.vercel.app/",
+  },
+  {
+    position: "Frontend Engineer, Ella Yang Designs",
+    startDate: "2021",
+    endDate: "2022",
+    desc: "Worked closely with graphic designer to implement existing portfolio work, into a portfolio site showcasing talents and expertise",
+    link: "https://ellayang.com/",
   },
 ];
 
 const projects = [
   {
-    position: "Cockatrice/Webatrice",
-    startDate: "2025",
-    desc: "Contributed to porting a legacy C++ card game to the web using Vue.js, supporting 800+ daily users. Developed real-time client-server communication with WebSockets and Express.js. Integrated gRPC proto headers for seamless cross-platform play and implemented Quasar for a consistent, material-design UI.",
-    link: "https://github.com/Cockatrice/Cockatrice"
-  },
-  {
     position: "Traffic Sign Detection",
     startDate: "2025",
     desc: "Built a full-stack autonomous driving simulation app using a custom-trained YOLOv11n model on 3K+ traffic sign images. Improved model accuracy by 40% through hyperparameter tuning. Developed a Flask backend to serve the model and a React frontend for live demos, delivering a seamless interactive experience.",
-    link: "https://github.com/msabeeh01/TrafficSignDetection_YoloV8"
+    link: "https://github.com/msabeeh01/TrafficSignDetection_YoloV8",
+  },
+];
+
+const openSource = [
+  {
+    position: "Cockatrice/Webatrice",
+    startDate: "2025",
+    desc: "Contributed to porting a legacy C++ card game to the web using Vue.js, supporting 800+ daily users. Developed real-time client-server communication with WebSockets and Express.js. Integrated gRPC proto headers for seamless cross-platform play and implemented Quasar for a consistent, material-design UI.",
+    link: "https://github.com/Cockatrice/Cockatrice",
   },
 ];
 
@@ -100,7 +110,8 @@ export default function Home() {
               Full Stack Engineer
             </h2>
             <p className="mt-4 max-w-xs leading-normal text-slate-400">
-              Full-stack developer blending design finesse with engineering depth — from performant UIs to scalable backends.
+              Full-stack developer blending design finesse with engineering
+              depth — from performant UIs to scalable backends.
             </p>
 
             <div className="h-full flex flex-col justify-between">
@@ -211,32 +222,32 @@ export default function Home() {
           <ul className="mt-16 space-y-2 max-w-[90%]" id="projects">
             <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
               Open Source Contributions
-              {/* <svg
-                width="16px"
-                height="16px"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {" "}
-                  <path
-                    d="M10 0L9 1L11.2929 3.29289L6.2929 8.29289L7.70711 9.70711L12.7071 4.7071L15 7L16 6V0H10Z"
-                    fill="#E2E8F0"
-                  ></path>{" "}
-                  <path
-                    d="M1 2H6V4H3V13H12V10H14V15H1V2Z"
-                    fill="#E2E8F0"
-                  ></path>{" "}
-                </g>
-              </svg> */}
             </h2>
+
+            {openSource.map((item, index) => (
+              <li
+                key={index}
+                className="text-black"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <ExperienceItem
+                  position={item.position}
+                  startDate={item.startDate}
+                  desc={item.desc}
+                  link={item.link}
+                  isHovered={hoveredIndex === index}
+                  isAnyHovered={hoveredIndex !== null}
+                />
+              </li>
+            ))}
+          </ul>
+
+          <ul className="mt-16 space-y-2 max-w-[90%]" id="projects">
+            <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+              Projects
+            </h2>
+
             {projects.map((item, index) => (
               <li
                 key={index}
